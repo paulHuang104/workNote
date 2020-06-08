@@ -1,0 +1,23 @@
+{
+  "name": "104work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gitbook serve ./content ./gh-pages",
+    "build": "gitbook build ./content ./gh-pages",
+    "deploy": "node ./scripts/deploy-gh-pages.js",
+    "publish": "npm run build && npm run deploy",
+    "port": "lsof -i :35729"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulHuang104/workNote.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulHuang104/workNote/issues"
+  },
+  "homepage": "https://github.com/paulHuang104/workNote#readme"
+}
